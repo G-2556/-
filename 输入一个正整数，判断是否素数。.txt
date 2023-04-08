@@ -1,0 +1,16 @@
+输入一个正整数，判断是否素数。
+int main()
+{
+	int num,i=2,a=0;
+	printf("请输入一个正整数："); scanf("%d", &num);
+	for (i; i < num; i++)
+	{
+		if (num % i == 0)
+			a++;
+	}
+	if (a == 0)
+		printf("该正整数为素数");
+	else
+		printf("该正整数不是素数");
+	return 0;
+}
